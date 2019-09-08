@@ -2,7 +2,9 @@
 
 线程安全的典型容器实现。
 
-## 目录 
+## 目录
+
+```
 root/ 
   List/ -- 链表抽象类 
     ConcurrentStaticList -- 线程安全的静态链表 
@@ -22,6 +24,5 @@ root/
   HashMap -- 哈希映射
     ConcurrentArrayHashSet -- 基于开放定址法的线程安全哈希映射 
     ConcurrentZipHashSet -- 基于拉链法的线程安全哈希映射
-  
-```
+ ```
 
