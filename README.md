@@ -2,7 +2,7 @@
 
 线程安全的典型容器实现。
 
-## 目录
+## 文件目录结构
 
 ```
 root/ 
@@ -10,8 +10,12 @@ root/
     ConcurrentStaticList -- 线程安全的静态链表 
     ConcurrentLinkedList -- 线程安全的链表 
   Stack/ -- 栈抽象类 
-    ConcurrentArrayStack -- 线程安全的数组栈（互斥锁，读写锁） √
-    ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁，读写锁） √
+    ConcurrentArrayStack/ -- 线程安全的数组栈 √
+      ConcurrentArrayStack（互斥锁） -- 互斥锁实现的线程安全数组栈 √
+      ConcurrentArrayStack（读写锁） -- 读写锁实现的线程安全数组栈（支持读优先和写优先） √
+    ConcurrentLinkedStack -- 线程安全的链表栈 √
+      ConcurrentLinkedStack（互斥锁）-- 互斥锁实现的线程安全数组栈 √
+      ConcurrentLinkedStack（读写锁）-- 读写锁实现的线程安全数组栈（支持读优先和写优先） √
   Queue/ -- 队列抽象类  
     ConcurrentArrayQueue -- 线程安全的数组队列 
     ConcurrentLinkedQueue -- 线程安全的链表队列 
