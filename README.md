@@ -30,7 +30,7 @@ root/
   HashSet/ -- 哈希表 
     ConcurrentArrayHashSet -- 基于分段锁的开放定址法线程安全哈希表 
     ConcurrentZipHashSet -- 基于分段锁的拉链法线程安全哈希表 
-  HashMap -- 哈希映射
+  HashMap/ -- 哈希映射
     ConcurrentArrayHashSet -- 基于分段锁的开放定址法线程安全哈希映射 
     ConcurrentZipHashSet -- 基于分段锁的线程安全哈希映射
  ```
