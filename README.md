@@ -10,8 +10,8 @@ root/
     ConcurrentStaticList -- 线程安全的静态链表 
     ConcurrentLinkedList -- 线程安全的链表 
   Stack/ -- 栈抽象类 
-    ConcurrentArrayStack -- 线程安全的数组栈（互斥锁，读写锁） √ 
-    ConcurrentLinkedStack -- 线程安全的链表栈
+    ConcurrentArrayStack -- 线程安全的数组栈（互斥锁，读写锁） √
+    ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁，读写锁） √
   Queue/ -- 队列抽象类  
     ConcurrentArrayQueue -- 线程安全的数组队列 
     ConcurrentLinkedQueue -- 线程安全的链表队列 
