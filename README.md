@@ -6,7 +6,9 @@
 
 ```
 root/ 
-  rwmutex -- 读写锁实现
+  ReadWriteMutex/ -- 读写锁
+    rwmutex -- 读优先的读写锁
+    wrmutex -- 写优先的独写锁
   List/ -- 链表抽象类 
     ConcurrentStaticList -- 基于交替锁的线程安全的静态链表 
     ConcurrentLinkedList -- 基于交替锁的线程安全的链表 
