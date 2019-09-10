@@ -21,11 +21,7 @@ root/
       ConcurrentLinkedStack（读写锁）-- 基于读写锁的线程安全数组栈（支持读优先和写优先） √
   Queue/ -- 队列抽象类  
     ConcurrentArrayQueue/ -- 线程安全的数组队列 
-      ConcurrentArrayQueue（双互斥锁） -- 基于双互斥锁的线程安全数组栈 
-      ConcurrentArrayQueue（双读写锁） -- 基于双读写锁的线程安全数组栈（支持读优先和写优先） 
     ConcurrentLinkedQueue/ -- 线程安全的链表队列 
-      ConcurrentLinkedQueue（双互斥锁） -- 基于双互斥锁的线程安全链表队列 
-      ConcurrentLinkedQueue（双读写锁） -- 基于双读写锁的线程安全链表队列（支持读优先和写优先） 
     BlockingQueue -- 阻塞队列
   Vector/ -- 动态数组抽象类
     ConcurrentVector -- 线程安全的Vector
