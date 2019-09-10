@@ -25,7 +25,7 @@ root/
   Queue/ -- 队列抽象类  
     ConcurrentArrayQueue/ -- 线程安全的数组队列 
     ConcurrentLinkedQueue/ -- 线程安全的链表队列 
-    BlockingQueue -- 阻塞队列
+    ConcurrentBlockingQueue -- 阻塞队列
   HashSet/ -- 哈希表 
     ConcurrentArrayHashSet -- 基于分段锁的开放定址法线程安全哈希表 
     ConcurrentZipHashSet -- 基于分段锁的拉链法线程安全哈希表 
