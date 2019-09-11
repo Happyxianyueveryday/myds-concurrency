@@ -26,7 +26,7 @@ root/
     ConcurrentLinkedQueue/ -- 线程安全的链表队列（互斥锁或读写锁）√
     ConcurrentBlockingQueue -- 链表阻塞队列 
   Vector/
-    CopyOnWriteArrayList -- 线程安全的动态数组
+    CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
   HashSet/
     ConcurrentHashset -- 线程安全的哈希集合（分段锁） 
   HashMap/
