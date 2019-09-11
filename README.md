@@ -22,7 +22,5 @@ root/
     ConcurrentArrayQueue/ -- 线程安全的数组队列（互斥锁和读写锁两种实现） √
     ConcurrentLinkedQueue/ -- 线程安全的链表队列（互斥锁和读写锁两种实现）√
     ConcurrentBlockingQueue -- 阻塞队列 √
-  HashSet/ -- 哈希表  
-    ConcurrentZipHashSet -- 基于分段锁的拉链法线程安全哈希表 √
  ```
 
