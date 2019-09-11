@@ -1,7 +1,7 @@
 package list;
 
 /**
- * @author krzykrucz
+ * @author pzh
  */
 public class FineGrainedConcurrentList<E> extends AbstractConcurrentList<E> implements ConcurrentList<E> {
 
