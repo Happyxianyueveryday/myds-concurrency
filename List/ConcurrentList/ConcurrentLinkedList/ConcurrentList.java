@@ -1,7 +1,7 @@
 package list;
 
 /**
- * @author krzykrucz
+ * @author pzh
  */
 public interface ConcurrentList<E> {
     int size();
