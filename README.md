@@ -16,11 +16,13 @@ root/
   List/ -- 链表抽象类 
     ConcurrentLinkedList -- 线程安全的链表（交替锁） √
   Stack/ -- 栈抽象类 
-    ConcurrentArrayStack/ -- 线程安全的数组栈（互斥锁和读写锁两种实现） √
-    ConcurrentLinkedStack/ -- 线程安全的链表栈（互斥锁和读写锁两种实现） √
+    ConcurrentArrayStack/ -- 线程安全的数组栈（互斥锁或读写锁） √
+    ConcurrentLinkedStack/ -- 线程安全的链表栈（互斥锁或读写锁） √
   Queue/ -- 队列抽象类  
-    ConcurrentArrayQueue/ -- 线程安全的数组队列（互斥锁和读写锁两种实现） √
-    ConcurrentLinkedQueue/ -- 线程安全的链表队列（互斥锁和读写锁两种实现）√
+    ConcurrentArrayQueue/ -- 线程安全的数组队列（互斥锁或读写锁） √
+    ConcurrentLinkedQueue/ -- 线程安全的链表队列（互斥锁或读写锁）√
     ConcurrentBlockingQueue -- 阻塞队列 √
+  HashMap/ -- 哈希表抽象类
+    ConcurrentHashmap -- 线程安全的哈希表（分段锁） √
  ```
 
