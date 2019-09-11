@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author krzykrucz
+ * @author pzh
  */
 abstract class AbstractConcurrentList<E> implements ConcurrentList<E> {
 
