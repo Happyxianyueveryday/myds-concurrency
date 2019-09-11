@@ -24,9 +24,9 @@ root/
   Queue/
     ConcurrentArrayQueue/ -- 线程安全的数组队列（互斥锁或读写锁） √
     ConcurrentLinkedQueue/ -- 线程安全的链表队列（互斥锁或读写锁）√
-    ConcurrentBlockingQueue -- 阻塞队列 
+    ConcurrentBlockingQueue -- 链表阻塞队列 
   Vector/
-    ConcurrentVector -- 线程安全的向量
+    CopyOnWriteArrayList -- 线程安全的动态数组
   HashSet/
     ConcurrentHashset -- 线程安全的哈希集合（分段锁） 
   HashMap/
