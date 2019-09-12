@@ -21,10 +21,11 @@ root/
   Stack/ 
     ConcurrentArrayStack/ -- 线程安全的数组栈（互斥锁或读写锁）√
     ConcurrentLinkedStack/ -- 线程安全的链表栈（互斥锁或读写锁）√
+    ConcurrentBlockingStack -- 阻塞栈 √
   Queue/
     ConcurrentArrayQueue/ -- 线程安全的数组队列（互斥锁或读写锁）√
     ConcurrentLinkedQueue/ -- 线程安全的链表队列（互斥锁或读写锁）√
-    ConcurrentBlockingQueue -- 链表阻塞队列 
+    ConcurrentBlockingQueue -- 阻塞队列 √
   Vector/
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
   HashSet/
