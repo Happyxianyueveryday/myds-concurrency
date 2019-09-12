@@ -19,8 +19,8 @@ root/
   List/ 
     ConcurrentLinkedList -- 线程安全的链表（交替锁） 
   Stack/ 
-    ConcurrentArrayStack/ -- 线程安全的数组栈（互斥锁和读写锁）√
-    ConcurrentLinkedStack/ -- 线程安全的链表栈（互斥锁和读写锁）√
+    ConcurrentArrayStack/ -- 线程安全的数组栈（互斥锁或读写锁）√
+    ConcurrentLinkedStack/ -- 线程安全的链表栈（互斥锁或读写锁）√
   Queue/
     ConcurrentArrayQueue/ -- 线程安全的数组队列（互斥锁或读写锁）√
     ConcurrentLinkedQueue/ -- 线程安全的链表队列（互斥锁或读写锁）√
