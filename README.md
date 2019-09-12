@@ -9,11 +9,12 @@
 ```
 root/ 
   // 1. 基本锁机制部分
-  SpinningMutex/ -- 自旋锁 
+  SpinningMutex -- 自旋锁 
   ReadWriteMutex/ -- 读写锁 √
     rwmutex -- 读优先的读写锁 √
     wrmutex -- 写优先的读写锁 √
     fair_rwmutex -- 读写公平的读写锁 √
+  ReentrantLock -- 可重入锁 √
     
   // 2. 线程安全容器部分
   List/ 
