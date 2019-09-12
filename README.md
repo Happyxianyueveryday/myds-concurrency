@@ -19,12 +19,13 @@ root/
   List/ 
     ConcurrentLinkedList -- 线程安全的链表（交替锁） 
   Stack/ 
-    ConcurrentArrayStack/ -- 线程安全的数组栈（互斥锁或读写锁）√
-    ConcurrentLinkedStack/ -- 线程安全的链表栈（互斥锁或读写锁）√
+    ConcurrentArrayStack -- 线程安全的数组栈（互斥锁或读写锁）√
+    ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁或读写锁）√
     ConcurrentBlockingStack -- 阻塞栈 √
   Queue/
-    ConcurrentArrayQueue/ -- 线程安全的数组队列（互斥锁或读写锁）√
-    ConcurrentLinkedQueue/ -- 线程安全的链表队列（互斥锁或读写锁）√
+    ConcurrentArrayQueue -- 线程安全的数组单向队列（互斥锁或读写锁）√
+    ConcurrentLinkedQueue -- 线程安全的链表单向队列（互斥锁或读写锁）√
+    ConcurrentLinkedDeque -- 线程安全的双向队列 
     ConcurrentBlockingQueue -- 阻塞队列 √
   Vector/
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
