@@ -15,11 +15,11 @@ root/
     
   // 2. 线程安全容器部分
   List/ 
-    ConcurrentLinkedList -- 线程安全的链表（交替锁） 
+    ConcurrentLinkedList -- 线程安全的链表（交替锁） √
   Stack/ 
     ConcurrentArrayStack -- 线程安全的数组栈（互斥锁或读写锁）√
     ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁或读写锁）√
-    ConcurrentBlockingStack -- 阻塞栈 （期望，可重入锁）√
+    ConcurrentBlockingStack -- 阻塞栈 （条件变量，可重入锁）√
   Queue/
     ConcurrentArrayQueue -- 线程安全的数组单向队列（互斥锁或读写锁）√
     ConcurrentLinkedQueue -- 线程安全的链表单向队列（互斥锁或读写锁）√
