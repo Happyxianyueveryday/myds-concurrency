@@ -2,8 +2,6 @@
 
 线程安全的典型容器实现。
 
-并发编程始终是编程中极具挑战的部分，本人水平有限且测试不足，发现错误欢迎在issue中提出，感激不尽！！！
-
 ## 文件目录结构
 
 ```
@@ -21,12 +19,12 @@ root/
   Stack/ 
     ConcurrentArrayStack -- 线程安全的数组栈（互斥锁或读写锁）√
     ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁或读写锁）√
-    ConcurrentBlockingStack -- 阻塞栈 √
+    ConcurrentBlockingStack -- 阻塞栈 （条件变量，可重入锁）
   Queue/
     ConcurrentArrayQueue -- 线程安全的数组单向队列（互斥锁或读写锁）√
     ConcurrentLinkedQueue -- 线程安全的链表单向队列（互斥锁或读写锁）√
     ConcurrentLinkedDeque -- 线程安全的双向队列 
-    ConcurrentBlockingQueue -- 阻塞队列（条件变量）√
+    ConcurrentBlockingQueue -- 阻塞队列（条件变量，可重入锁）√
   Vector/
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
   HashSet/
