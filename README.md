@@ -18,7 +18,7 @@ root/
   // 2. 线程安全容器部分
   List/ 
     ConcurrentLinkedList -- 线程安全的链表（交替锁） √
-    ConcurrentLinkedList -- 线程安全的链表（交替锁+乐观锁策略） √
+    ConcurrentOptLinkedList -- 线程安全的链表（交替锁+乐观锁策略） √
   Stack/ 
     ConcurrentArrayStack -- 线程安全的数组栈（互斥锁或读写锁）√
     ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁或读写锁）√
