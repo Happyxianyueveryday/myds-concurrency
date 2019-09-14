@@ -21,18 +21,17 @@ root/
   Stack/ 
     ConcurrentArrayStack -- 线程安全的数组栈（互斥锁或读写锁）√
     ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁或读写锁）√
+    ConcurrentLinkedStack(Java) -- java的线程安全链表栈（CAS）9.15上午
     ConcurrentBlockingStack -- 阻塞栈 （条件变量，可重入锁）√
   Queue/
     ConcurrentArrayQueue -- 线程安全的数组单向队列（互斥锁或读写锁）√
     ConcurrentLinkedQueue -- 线程安全的链表单向队列（互斥锁或读写锁）√
-    ConcurrentLinkedDeque -- 线程安全的双向队列 
+    ConcurrentLinkedQueue(Java) -- java的线程安全链表队列（CAS）9.15上午
     ConcurrentBlockingQueue -- 阻塞队列（条件变量，可重入锁）√
   Vector/
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
   HashSet/
-    ConcurrentHashset -- 线程安全的哈希集合（分段锁） 
-  HashMap/
-    ConcurrentHashMap -- 线程安全的哈希映射（分段锁）
+    ConcurrentHashset -- 线程安全的哈希集合（分段锁） √
     
   // 3. 线程池
  ```
