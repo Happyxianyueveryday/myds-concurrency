@@ -18,17 +18,14 @@ root/
   // 2. 线程安全容器部分
   List/ 
     ConcurrentLinkedList -- 线程安全的链表（交替锁） √
-    ConcurrentOptLinkedList -- 线程安全的链表（交替锁+乐观锁策略） √
   Stack/ 
     ConcurrentArrayStack -- 线程安全的数组栈（互斥锁或读写锁）√
     ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁或读写锁）√
     ConcurrentBlockingStack -- 阻塞栈 （条件变量，可重入锁）√
-    ConcurrentLinkedStack(Java) -- java的线程安全链表栈（CAS）预计9.15上午完成
   Queue/
     ConcurrentArrayQueue -- 线程安全的数组单向队列（互斥锁或读写锁）√
     ConcurrentLinkedQueue -- 线程安全的链表单向队列（互斥锁或读写锁）√
     ConcurrentBlockingQueue -- 阻塞队列（条件变量，可重入锁）√
-    ConcurrentLinkedQueue(Java) -- java的线程安全链表队列（CAS）预计9.15上午完成
   Vector/
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
   HashSet/
