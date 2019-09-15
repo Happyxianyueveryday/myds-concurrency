@@ -15,25 +15,26 @@ root/
     fair_rwmutex -- 读写公平的读写锁 √
     
   // 2. 线程安全容器部分
-  List/ 
-    ConcurrentLinkedList -- 线程安全的链表（交替锁） √
-  Stack/ 
+  Stack/ -- 栈
     ConcurrentArrayStack -- 线程安全的数组栈（互斥锁或三种策略的读写锁）√
     ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁或三种策略的读写锁）√
     ConcurrentLockFreeStack -- 无锁线程安全的链表栈 
-  BlockingStack/
+  BlockingStack/ -- 阻塞栈
     ConcurrentBlockingStack -- 阻塞栈 （条件变量，可重入锁）√
-  Queue/
+  Queue/ --队列
     ConcurrentArrayQueue -- 线程安全的数组单向队列（互斥锁或三种策略的读写锁）√
     ConcurrentLinkedQueue -- 线程安全的链表单向队列（互斥锁或三种策略的读写锁）√
     ConcurrentLockFreeQueue -- 无锁线程安全的链表队列 
-  BlockingQueue/ 
+  BlockingQueue/ -- 阻塞队列
     LinkedBlockingQueue -- 链表阻塞队列（条件变量，可重入锁）√
     ArrayBlockingQueue -- 
     DelayQueue -- 
-  Vector/
+  Vector/ -- 数组
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
-  HashSet/HashMap/
+  Set/ -- 非哈希集合
+    ConcurrentLinkedSet -- 基于链表的集合（交替锁）
+    ConcurrentSkipList -- 基于跳表的集合
+  HashSet/HashMap/ -- 哈希集合
     ConcurrentHashset -- 线程安全的哈希集合（分段锁） 
     ConcurrentHashMap -- 线程安全的哈希映射（分段锁）
     
