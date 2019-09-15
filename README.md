@@ -20,16 +20,21 @@ root/
   Stack/ 
     ConcurrentArrayStack -- 线程安全的数组栈（互斥锁或三种策略的读写锁）√
     ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁或三种策略的读写锁）√
+    ConcurrentLockFreeStack -- 无锁线程安全的链表栈 
+  BlockingStack/
     ConcurrentBlockingStack -- 阻塞栈 （条件变量，可重入锁）√
-    ConcurrentBlockingStack -- 阻塞
   Queue/
     ConcurrentArrayQueue -- 线程安全的数组单向队列（互斥锁或三种策略的读写锁）√
     ConcurrentLinkedQueue -- 线程安全的链表单向队列（互斥锁或三种策略的读写锁）√
+  BlockingQueue/ 
+    ConcurrentLockFreeQueue -- 无锁线程安全的链表队列
     ConcurrentBlockingQueue -- 阻塞队列（条件变量，可重入锁）√
   Vector/
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
-  HashSet/
-    ConcurrentHashset -- 线程安全的哈希集合（分段锁） √ 
+  HashSet/HashMap/
+    ConcurrentHashset -- 线程安全的哈希集合（分段锁） 
+    ConcurrentHashMap -- 线程安全的哈希映射（分段锁）
+  Hash
     
   // 3. 线程池
  ```
