@@ -9,7 +9,6 @@
 ```
 root/ 
   // 1. 基本锁机制部分
-  SpinningMutex -- 自旋锁 
   ReadWriteMutex/ -- 读写锁 √
     rwmutex -- 读优先的读写锁 √
     wrmutex -- 写优先的读写锁 √
@@ -29,7 +28,7 @@ root/
   Vector/
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
   HashSet/
-    ConcurrentHashset -- 线程安全的哈希集合（分段锁） √ 9.15上午
+    ConcurrentHashset -- 线程安全的哈希集合（分段锁） √ 
     
   // 3. 线程池
  ```
