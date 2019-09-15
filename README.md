@@ -31,10 +31,10 @@ root/
     DelayQueue -- 
   Vector/ -- 数组
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
-  Set/ -- 非哈希集合
+  Set/ -- 集合
     ConcurrentLinkedSet -- 基于链表的集合（交替锁）
     ConcurrentSkipList -- 基于跳表的集合
-  HashSet/HashMap/ -- 哈希集合
+  HashSet/HashMap/ -- 哈希表集合
     ConcurrentHashset -- 线程安全的哈希集合（分段锁） 
     ConcurrentHashMap -- 线程安全的哈希映射（分段锁）
     
