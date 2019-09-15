@@ -26,19 +26,17 @@ root/
   Queue/
     ConcurrentArrayQueue -- 线程安全的数组单向队列（互斥锁或三种策略的读写锁）√
     ConcurrentLinkedQueue -- 线程安全的链表单向队列（互斥锁或三种策略的读写锁）√
+    ConcurrentLockFreeQueue -- 无锁线程安全的链表队列 
   BlockingQueue/ 
-    ConcurrentLockFreeQueue -- 无锁线程安全的链表队列
-    ConcurrentBlockingQueue -- 阻塞队列（条件变量，可重入锁）√
+    LinkedBlockingQueue -- 链表阻塞队列（条件变量，可重入锁）√
+    ArrayBlockingQueue -- 
+    DelayQueue -- 
   Vector/
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
   HashSet/HashMap/
     ConcurrentHashset -- 线程安全的哈希集合（分段锁） 
     ConcurrentHashMap -- 线程安全的哈希映射（分段锁）
-  Hash
     
   // 3. 线程池
  ```
 
-附注：java.utils.concurrent的结构图如下：
-
-![avatar](https://img3.mukewang.com/5b7fe62f0001865512840784.jpg)
