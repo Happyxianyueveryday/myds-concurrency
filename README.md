@@ -39,3 +39,6 @@ root/
   // 3. 线程池
  ```
 
+附注：java.utils.concurrent的结构图如下：
+
+![avatar](https://img3.mukewang.com/5b7fe62f0001865512840784.jpg)
