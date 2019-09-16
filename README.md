@@ -2,7 +2,7 @@
 
 基于C++的相对线程安全的典型容器实现。
 
-附注：cpp的stl本身大多数容器不支持并发，本项目是并行计算实验室工作期间实现一些基础设施，包含支持并发的一些典型容器。其中部分在设计原理上参照了java.util.concurrent并发容器库的实现，部分则是自己根据实际需求设计的新容器（例如ConcurrentLinkedSet），并且在锁的粒度上提供了多种选择。
+附注：cpp的stl本身大多数容器不支持并发，本项目是根据其他项目时的需求设计的，包含支持并发的一些典型容器。其中部分在设计原理上参照了java.util.concurrent并发容器库的实现，部分则是自己根据实际需求设计的新容器（例如ConcurrentLinkedSet），并且在锁的粒度上提供了多种选择。
 
 ## 目录
 
@@ -27,17 +27,17 @@ root/
   BlockingQueue/ -- 阻塞队列
     LinkedBlockingQueue -- 链表阻塞队列（条件变量，可重入锁）√
     ArrayBlockingQueue -- 环形数组阻塞队列 √ 
-    DelayQueue -- 延迟队列 9.16晚
+    DelayQueue -- 延迟队列 
     LockFreeRingBuffer -- 无锁并发环形缓冲区 
   Vector/ -- 数组
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
   Set/ -- 集合
     ConcurrentLinkedSet -- 基于链表的集合（交替锁）√
-    ConcurrentSkipListSet -- 基于跳表的集合 9.16晚
+    ConcurrentSkipListSet -- 基于跳表的集合 9.17上午
   HashSet/ -- 哈希表集合
-    ConcurrentHashSet -- 线程安全的哈希集合（分段锁） 9.16通宵完成
+    ConcurrentHashSet -- 线程安全的哈希集合（分段锁） 9.17上午
   HashMap/ -- 哈希表映射
-    ConcurrentHashMap -- 线程安全的哈希映射（分段锁） 9.16通宵完成
+    ConcurrentHashMap -- 线程安全的哈希映射（分段锁） 9.17上午
     
   // 3. 线程池
  ```
