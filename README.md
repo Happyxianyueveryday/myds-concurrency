@@ -27,8 +27,8 @@ root/
     ConcurrentLockFreeQueue -- 无锁线程安全的链表队列 
   BlockingQueue/ -- 阻塞队列
     LinkedBlockingQueue -- 链表阻塞队列（条件变量，可重入锁）√
-    ArrayBlockingQueue -- 数组阻塞队列
-    DelayQueue -- 延迟队列
+    ArrayBlockingQueue -- 数组阻塞队列 √
+    DelayQueue -- 延迟队列 
   Vector/ -- 数组
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
   Set/ -- 集合
