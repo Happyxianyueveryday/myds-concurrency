@@ -2,7 +2,7 @@
 
 基于C++的线程安全的典型容器实现。
 
-附注：因为C++的stl库并不是线程安全的，而在自己的另一个关于cpp网络编程框架中需要使用各种各样的线程安全的容器，因此自己手写实现了一套非常基础的支持并发的典型容器，在设计原理上参照了java.util.concurrent并发容器库的实现，也有自己设计的新容器（例如ConcurrentLinkedSet），并且在锁的粒度上提供了多种选择。
+附注：cpp的stl本身大多数容器不支持并发，本项目是并行计算实验室工作期间实现一些基础设施，包含支持并发的一些典型容器。其中部分在设计原理上参照了java.util.concurrent并发容器库的实现，部分则是自己根据实际需求设计的新容器（例如ConcurrentLinkedSet），并且在锁的粒度上提供了多种选择。
 
 ## 目录
 
@@ -19,18 +19,18 @@ root/
   Stack/ -- 栈
     ConcurrentArrayStack -- 线程安全的数组栈（互斥锁或三种策略的读写锁）√
     ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁或三种策略的读写锁）√
-    ConcurrentLockFreeStack -- 无锁线程安全的链表栈 √
+    ConcurrentLockFreeStack -- 无锁线程安全的链表栈 √ 9.16晚
   BlockingStack/ -- 阻塞栈
     ConcurrentBlockingStack -- 链表阻塞栈 （条件变量，可重入锁）√
   Queue/ --队列
     ConcurrentArrayQueue -- 线程安全的环形数组单向队列（互斥锁或三种策略的读写锁）√
     ConcurrentLinkedQueue -- 线程安全的链表单向队列（互斥锁或三种策略的读写锁）√
-    ConcurrentLockFreeQueue -- 无锁线程安全的链表队列 
+    ConcurrentLockFreeQueue -- 无锁线程安全的链表队列 9.16晚
   BlockingQueue/ -- 阻塞队列
     LinkedBlockingQueue -- 链表阻塞队列（条件变量，可重入锁）√
     ArrayBlockingQueue -- 环形数组阻塞队列 √ 
     DelayQueue -- 延迟队列 
-    LockFreeRingBuffer -- 无锁并发环形缓冲区
+    LockFreeRingBuffer -- 无锁并发环形缓冲区 
   Vector/ -- 数组
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
   Set/ -- 集合
