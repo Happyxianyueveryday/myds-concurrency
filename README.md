@@ -9,6 +9,7 @@
 ```
 root/ 
   // 1. 基本锁机制部分
+  SpinningMutex -- 自旋锁
   ReadWriteMutex/ -- 读写锁 √
     rwmutex -- 读优先的读写锁 √
     wrmutex -- 写优先的读写锁 √
@@ -22,13 +23,14 @@ root/
   BlockingStack/ -- 阻塞栈
     ConcurrentBlockingStack -- 链表阻塞栈 （条件变量，可重入锁）√
   Queue/ --队列
-    ConcurrentArrayQueue -- 线程安全的数组单向队列（互斥锁或三种策略的读写锁）√
+    ConcurrentArrayQueue -- 线程安全的环形数组单向队列（互斥锁或三种策略的读写锁）√
     ConcurrentLinkedQueue -- 线程安全的链表单向队列（互斥锁或三种策略的读写锁）√
     ConcurrentLockFreeQueue -- 无锁线程安全的链表队列 
   BlockingQueue/ -- 阻塞队列
     LinkedBlockingQueue -- 链表阻塞队列（条件变量，可重入锁）√
-    ArrayBlockingQueue -- 数组阻塞队列 √ 
+    ArrayBlockingQueue -- 环形数组阻塞队列 √ 
     DelayQueue -- 延迟队列 
+    LockFreeRingBuffer -- 无锁并发环形缓冲区
   Vector/ -- 数组
     CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
   Set/ -- 集合
