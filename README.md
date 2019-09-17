@@ -36,9 +36,9 @@ root/
     ConcurrentLinkedSet -- 基于链表的集合（交替锁）√
     ConcurrentSkipListSet -- 基于跳表的集合 
   HashSet/ -- 哈希表集合
-    ConcurrentHashSet -- 线程安全的哈希集合（分段锁） 9.17上午
+    ConcurrentHashSet -- 线程安全的哈希集合（分段锁） 9.17下午
   HashMap/ -- 哈希表映射
-    ConcurrentHashMap -- 线程安全的哈希映射（分段锁） 9.17上午
+    ConcurrentHashMap -- 线程安全的哈希映射（分段锁） 9.17下午
     
   // 3. 线程池
  ```
