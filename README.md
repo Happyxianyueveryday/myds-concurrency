@@ -35,6 +35,5 @@ root/
   HashSet/ -- 哈希表集合
     ConcurrentHashSet -- 线程安全的哈希集合（分段锁） √
     
-  // 3. 线程池
  ```
 
