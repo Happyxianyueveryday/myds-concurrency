@@ -17,23 +17,24 @@ root/
     
   // 2. 线程安全容器部分
   Stack/ -- 栈
-    ConcurrentArrayStack -- 线程安全的数组栈（互斥锁或三种策略的读写锁）√
-    ConcurrentLinkedStack -- 线程安全的链表栈（互斥锁或三种策略的读写锁）√
+    ConcurrentArrayStack -- 数组栈（互斥锁或三种策略的读写锁）√
+    ConcurrentLinkedStack -- 链表栈（互斥锁或三种策略的读写锁）√
   BlockingStack/ -- 阻塞栈
     ConcurrentBlockingStack -- 链表阻塞栈 （条件变量，可重入锁）√
   Queue/ --队列
-    ConcurrentArrayQueue -- 线程安全的环形数组单向队列（互斥锁或三种策略的读写锁）√
-    ConcurrentLinkedQueue -- 线程安全的链表单向队列（互斥锁或三种策略的读写锁）√
+    ConcurrentArrayQueue -- 环形数组单向队列（互斥锁或三种策略的读写锁）√
+    ConcurrentLinkedQueue -- 链表单向队列（互斥锁或三种策略的读写锁）√
   BlockingQueue/ -- 阻塞队列
     LinkedBlockingQueue -- 链表阻塞队列（条件变量，可重入锁）√
     ArrayBlockingQueue -- 环形数组阻塞队列 √ 
     LockFreeRingBuffer -- 无锁并发环形缓冲区 
   Vector/ -- 数组
-    CopyOnWriteArrayList -- 线程安全的动态数组（写时复制容器，可重入锁）
+    CopyOnWriteArrayList -- 写时复制数组容器（可重入锁）
   Set/ -- 集合
-    ConcurrentLinkedSet -- 线程安全的链表集合（交替锁）√
-  HashSet/ -- 哈希表集合
-    ConcurrentHashSet -- 线程安全的哈希集合（分段锁） √
+    ConcurrentLinkedSet -- 基于链表的集合（交替锁）√
+  HashSet/ -- 哈希集合
+    ConcurrentStrongHashSet -- 强一致性的哈希集合（分段锁+互斥锁） √
+    ConcurrentWeakHashSet -- 弱一致性的哈希集合（分段锁+HashEntry） 
     
  ```
 
