@@ -33,7 +33,7 @@ root/
   Set/ -- 集合
     ConcurrentLinkedSet -- 基于链表的集合（交替锁）√
   HashSet/ -- 哈希集合
-    ConcurrentStrongHashSet -- 哈希集合（分段锁+读写锁） √
-    ConcurrentWeakHashSet -- 哈希集合（分段锁+HashEntry）√ 
+    ConcurrentStrongHashSet -- 强一致性哈希集合（分段锁+互斥锁） √
+    ConcurrentWeakHashSet -- 弱一致性哈希集合（分段锁+HashEntry，以及分段锁+读写锁）√ 
  ```
 
