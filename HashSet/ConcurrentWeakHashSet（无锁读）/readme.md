@@ -1,5 +1,13 @@
 ## ConcurrentWeakHashSet: 弱一致性并发哈希集合
 
+### 0. 简介
+ConcurrentWeakHashSet是一个弱一致性的并发哈希集合，具有如下的基本特性：
+
++ 读操作仅能保证弱一致性，即读操作读的不一定是最新版本的哈希表。
++ 最多支持指定固定数量（默认为16）个写操作并发执行，支持无上限的任意数量的读操作并发执行。
+
+具体的实现原理可以参照下面的解析。
+
 ### 1. 总体结构
 ![avatar](https://img-blog.csdnimg.cn/20181116015408480.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTMyNTY4MTY=,size_16,color_FFFFFF,t_70)
 
