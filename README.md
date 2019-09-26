@@ -29,7 +29,7 @@ root/
     ArrayBlockingQueue -- 环形数组阻塞队列 √ 
     LockFreeRingBuffer -- 无锁并发环形缓冲区 
   Vector/ -- 数组
-    CopyOnWriteArrayList -- 写时复制数组容器（可重入锁）
+    CopyOnWriteArrayList -- 写时复制数组容器（可重入锁）√
   Set/ -- 集合
     ConcurrentLinkedSet -- 基于链表的集合（交替锁）√
   HashSet/ -- 哈希集合
