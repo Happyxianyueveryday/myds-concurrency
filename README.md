@@ -8,12 +8,13 @@
 
 ```
 root/ 
-  // 1. 基本锁机制部分
+  // 1. 锁与信号量
   SpinningMutex -- 自旋锁
   ReadWriteMutex/ -- 读写锁 √
     rwmutex -- 读优先的读写锁 √
     wrmutex -- 写优先的读写锁 √
     fair_rwmutex -- 读写公平的读写锁 √
+  Semaphore -- 信号量
     
   // 2. 线程安全容器部分
   Stack/ -- 栈
