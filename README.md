@@ -9,7 +9,7 @@
 ```
 root/ 
   // 1. 锁与信号量
-  SpinningMutex -- 自旋锁
+  SpinLock -- 自旋锁
   ReadWriteMutex/ -- 读写锁 √
     rwmutex -- 读优先的读写锁 √
     wrmutex -- 写优先的读写锁 √
