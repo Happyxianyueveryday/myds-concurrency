@@ -9,8 +9,8 @@
 ```
 root/ 
   // 1. 锁与信号量
-  SpinLock/ -- 自旋锁
-    SpinLock -- 非公平自旋锁
+  SpinLock/ -- 自旋锁 √
+    SpinLock -- 非公平自旋锁 √
     TicketSpinLock -- 公平自旋锁
     ReentrantSpinLock -- 可重入自旋锁
     CLHLock
