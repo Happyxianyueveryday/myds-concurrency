@@ -12,7 +12,7 @@ root/
   SpinLock/ -- 自旋锁 √
     SpinLock -- 非公平自旋锁 √
     TicketSpinLock -- 公平自旋锁（返回排队号） √
-    TicketLocalSpinLock -- 公平自旋锁（不返回排队号）√
+    TicketLocalSpinLock -- 公平自旋锁（thread_local版本，不返回排队号）√
     MCSLock -- 公平自旋锁
     ReentrantSpinLock -- 可重入自旋锁
     
