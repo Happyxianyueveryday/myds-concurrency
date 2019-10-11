@@ -1,5 +1,8 @@
 ## ConcurrentStrongHashSet: 强一致性并发哈希集合
 
+### 0. 备注
+2019.10.11 测试和项目中发现问题，重新下线修改。
+
 ### 1. 总体结构
 ![avatar](https://img-blog.csdnimg.cn/20181116015408480.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTMyNTY4MTY=,size_16,color_FFFFFF,t_70)
 
