@@ -1,5 +1,7 @@
 # myds-concurrency
 
+本项目的最新更新已经迁移至：https://github.com/Happyxianyueveryday/vessel-concurrency 。
+
 基于C++的相对线程安全的典型容器实现。
 
 附注：cpp的stl本身大多数容器不支持并发，本项目是根据其他项目时的需求设计的，从零开始构造的线程安全容器，包含支持并发的一些典型容器。其中部分在设计原理上参照了java.util.concurrent并发容器库的实现，部分则是自己根据实际需求设计的新容器（例如ConcurrentLinkedSet），并且在锁的粒度以及一致性上提供了多种选择。
