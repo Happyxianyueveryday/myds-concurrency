@@ -1,6 +1,6 @@
 # myds-concurrency
 
-本项目的最新更新已经迁移至：https://github.com/Happyxianyueveryday/vessel-concurrency ，请移步至该链接。
+本项目的最新更新以及补充内容已经迁移至：https://github.com/Happyxianyueveryday/vessel-concurrency ，敬请移步至该链接。
 
 基于C++的相对线程安全的典型容器实现。
 
